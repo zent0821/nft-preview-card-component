@@ -1,0 +1,154 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Very-dark-blue-main-BG);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: relative;
+    width: 480px;
+    margin: 60px auto;
+    padding: 40px;
+    background: var(--Very-dark-blue-card-BG);
+    border-radius: 0.6em;
+
+}
+
+.card__header{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.img__header{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6em;
+}
+
+.card__img__view{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Cyan);
+    opacity: 0;
+    transition:all 0.5s;
+    visibility: hidden;
+    border-radius: 0.6em;
+}
+
+.img__view{
+    margin: 180px;
+}
+
+.card__header:hover > .card__img__view{
+    opacity: .6;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.title{
+    font-weight: 600;
+    color: var(--White);
+}
+
+.title:hover{
+    color: var(--Cyan);
+}
+
+.card__body{
+    width: 100%;
+    padding-right: 50px;
+}
+
+.paragraph{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    display: inline;
+}
+
+.paragraph--line-height{
+    line-height: 1.5em;
+    font-size: 22px;
+}
+
+.card__price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paragraph__price{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.card__line{
+    width: 100%;
+    height: 1px;
+    margin: 10px auto;
+    background: var(--Very-dark-blue-line);
+}
+
+.card__footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.img__footer{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.paragraph--white{
+    color: var(--White);
+}
+
+.paragraph--white:hover{
+    color: var(--Cyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--White);
+}
+
+.attribution a { 
+    color: inherit;
+}
+
+.img__github{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
